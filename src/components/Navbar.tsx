@@ -35,15 +35,15 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, setIsOpen }) => {
           <motion.div
             initial={{ opacity: 0, x: '-100%' }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '-100%' }}
-            transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-            className="fixed top-0 left-0 h-screen w-80 menu-gradient backdrop-blur-lg z-40 pt-20"
+            exit={{ opacity: 0, x: '-100%', transition: { duration: 0.3, ease: "easeInOut" } }}
+            transition={{ type: 'spring', stiffness: 70, damping: 15 }}
+            className="fixed top-0 left-0 h-screen w-80 menu-gradient backdrop-blur-lg z-40 pt-20 will-change-transform"
           >
             <div className="flex flex-col space-y-6 p-8">
               {menuItems.map((item) => (
                 <motion.div
                   key={item.path}
-                  whileHover={{ x: 10 }}
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
