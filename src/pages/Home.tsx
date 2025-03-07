@@ -45,14 +45,17 @@ const Home = () => {
         Салон красоты
       </motion.p>
       
-      <motion.div
+      <motion.a
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.8 }}
-        className="glass gold-border px-8 py-4 rounded-full text-gold-200"
+        href="https://wa.me/77027711043"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="glass gold-border px-8 py-4 rounded-full text-gold-200 hover:bg-gold-500 hover:text-white transition"
       >
-        Ваша красота - наше золото
-      </motion.div>
+        Записаться
+      </motion.a>
     </motion.div>
   );
 };
