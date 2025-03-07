@@ -27,7 +27,7 @@ const Address = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
           <img
-            src="https://github.com/mirasbox2022/zoloto/blob/0e7d755853152330c64e3220449cf7738b393a8c/src/pages/zoloto.png"
+            src="/zoloto.png"
             alt="Salon exterior"
             className="w-full h-64 object-cover"
           />
