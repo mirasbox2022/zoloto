@@ -3,11 +3,6 @@ import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
 const Address = () => {
-  const openMap = () => {
-    const url = 'https://2gis.kz/almaty/geo/70000001025074792';
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -44,12 +39,14 @@ const Address = () => {
             <p className="text-gold-200 text-lg">Улица Толе би, 261, Алматы</p>
           </div>
           
-          <button
-            onClick={openMap}
+          <a
+            href="https://2gis.kz/almaty/geo/70000001025074792"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black font-bold py-3 px-6 rounded-xl text-center transition-all duration-300 transform hover:scale-[1.02]"
           >
             Открыть в 2GIS
-          </button>
+          </a>
         </div>
       </motion.div>
     </motion.div>
