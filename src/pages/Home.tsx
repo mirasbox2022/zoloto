@@ -29,9 +29,18 @@ const Home = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-2xl md:text-3xl text-gold-300 mb-8 text-center"
+        className="text-2xl md:text-3xl text-gold-300 mb-4 text-center"
       >
         Салон красоты
+      </motion.p>
+
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="text-lg md:text-xl text-gold-200 mb-8 text-center"
+      >
+        Идеальное сочетание стиля, качества и заботы о вас.
       </motion.p>
 
       <motion.a
