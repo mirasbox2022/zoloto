@@ -4,7 +4,8 @@ import { MapPin } from 'lucide-react';
 
 const Address = () => {
   const openMap = () => {
-    window.open('https://2gis.kz/almaty/geo/70000001025074792', '_blank');
+    const url = 'https://2gis.kz/almaty/geo/70000001025074792';
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
